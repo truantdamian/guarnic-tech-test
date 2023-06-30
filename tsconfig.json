@@ -7,8 +7,9 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "esModuleInterop": true
   },
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
-  "exclude": ["node_modules", ".vscode"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", ".vscode", "src/**/*.spec.ts", "src/**/*.test.ts"]
 }
