@@ -9,8 +9,7 @@ export class CarInsurance {
 
   updatePrice() {
     this.products.forEach((product) => {
-      product.updateSellIn();
-      product.updatePrice();
+      product.update();
     });
 
     return this.products;

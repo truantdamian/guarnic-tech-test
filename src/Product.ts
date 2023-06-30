@@ -6,9 +6,9 @@ export class Product implements IProducts {
   _price: number;
 
   constructor(name: string, sellIn: number, price: number) {
-    this._name = name;
-    this._sellIn = sellIn;
-    this._price = price;
+    this.name = name;
+    this.sellIn = sellIn;
+    this.price = price;
   }
 
   get name() {
@@ -49,5 +49,10 @@ export class Product implements IProducts {
     } else {
       this.price = this.price - 2;
     }
+  }
+
+  update() {
+    this.updateSellIn();
+    this.updatePrice();
   }
 }

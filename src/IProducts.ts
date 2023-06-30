@@ -4,4 +4,5 @@ export interface IProducts {
   price: number;
   updatePrice(): void;
   updateSellIn(): void;
+  update(): void;
 }

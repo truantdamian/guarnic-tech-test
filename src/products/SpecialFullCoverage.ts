@@ -1,7 +1,12 @@
+import { eProducts } from "./../constants/products";
 import { IProducts } from "./../IProducts";
 import { Product } from "./../Product";
 
 export class SpecialFullCoverage extends Product implements IProducts {
+  constructor(sellIn: number, price: number) {
+    super(eProducts.SPECIAL_FULL_COVERAGE, sellIn, price);
+  }
+
   updatePrice() {
     if (this.sellIn > 10) {
       this.price = this.price + 1;

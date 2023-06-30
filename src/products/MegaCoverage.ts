@@ -1,7 +1,12 @@
+import { eProducts } from "./../constants/products";
 import { IProducts } from "./../IProducts";
 import { Product } from "./../Product";
 
 export class MegaCoverage extends Product implements IProducts {
+  constructor(sellIn: number, price: number) {
+    super(eProducts.MEGA_COVERAGE, sellIn, price);
+  }
+
   updateSellIn() {
     this.sellIn = this.sellIn;
   }

@@ -1,17 +1,18 @@
 import { CarInsurance } from "./CarInsurance";
 import { IProducts } from "./IProducts";
 import { createProduct } from "./ProductCreator";
+import { eProducts } from "./constants/products";
 
 const productsAtDayZero = [
-  createProduct("Medium Coverage", 10, 20),
-  createProduct("Full Coverage", 2, 0),
-  createProduct("Low Coverage", 5, 7),
-  createProduct("Mega Coverage", 0, 80),
-  createProduct("Mega Coverage", -1, 80),
-  createProduct("Special Full Coverage", 15, 20),
-  createProduct("Special Full Coverage", 10, 49),
-  createProduct("Special Full Coverage", 5, 49),
-  createProduct("Super Sale", 3, 6),
+  createProduct(eProducts.MEDIUM_COVERAGE, 10, 20),
+  createProduct(eProducts.FULL_COVERAGE, 2, 0),
+  createProduct(eProducts.LOW_COVERAGE, 5, 7),
+  createProduct(eProducts.MEGA_COVERAGE, 0, 80),
+  createProduct(eProducts.MEGA_COVERAGE, -1, 80),
+  createProduct(eProducts.SPECIAL_FULL_COVERAGE, 15, 20),
+  createProduct(eProducts.SPECIAL_FULL_COVERAGE, 10, 49),
+  createProduct(eProducts.SPECIAL_FULL_COVERAGE, 5, 49),
+  createProduct(eProducts.SUPER_SALE, 3, 6),
 ];
 
 const carInsurance = new CarInsurance(productsAtDayZero);
